@@ -1,7 +1,8 @@
 #include"main.h"
 /**
- * _islower -mohamed
- * return Always 0 (success)
+ * c -Is the char
+ * _islower -Mohamed
+ * returns: 1 if c is lowercase or 0 for otherwise
  */
 int _islower(int c)
 {
