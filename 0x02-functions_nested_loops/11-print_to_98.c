@@ -18,7 +18,7 @@ printf("98\n");
 }
 else if (n >= 98)
 {
-for (in = n; in >= 97; in--)
+for (in = n; in >= 99; in--)
 {
 printf("%i, ", in);
 }
