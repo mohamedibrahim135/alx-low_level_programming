@@ -20,7 +20,7 @@ mul = j * i;
 
 if (i < n)
 {
-printf("%i, ", mul);
+printf("%i,\t", mul);
 }
 
 else
