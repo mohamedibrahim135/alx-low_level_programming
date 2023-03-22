@@ -14,7 +14,7 @@ for (in = n; in <= 97; in++)
 {
 printf("%i, ", in);
 }
-printf("98");
+printf("98\n");
 }
 else if (n >= 98)
 {
@@ -22,10 +22,10 @@ for (in = n; in >= 97; in--)
 {
 printf("%i, ", in);
 }
-printf("98");
+printf("98\n");
 }
 else
 {
-printf("%i", n);
+printf("%i\n", n);
 }
 }
