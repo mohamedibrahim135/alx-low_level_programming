@@ -17,4 +17,5 @@ printf("%i, ", mul);
 i = j;
 j = mul;
 }
+return (0);
 }
