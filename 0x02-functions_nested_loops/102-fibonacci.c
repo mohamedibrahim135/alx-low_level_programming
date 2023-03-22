@@ -1,8 +1,7 @@
-#include"main.h"
 #include <stdio.h>
 /**
-* main -Checks for lowercase character
-* Return: 1 for lowercase character or 0 for anything else
+*main -Entry point
+*Return: Always 0 (Success)
 */
 int main(void)
 {
