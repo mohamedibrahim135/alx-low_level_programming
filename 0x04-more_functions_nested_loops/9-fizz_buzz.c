@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include"main.h"
 
 /**
 *main - Prints a Fizz Buzz program
@@ -16,26 +15,27 @@ for (x = 1; x <= 100; x++)
 if (x % 3 == 0)
 {
 if (x % 5 == 0)
-{printf("FizzBuzz ");
+{
+printf("FizzBuzz \n");
 }
 else
 {
-printf("Fizz ");
+printf("Fizz \n");
 }
 }
 else if (x % 5 == 0)
 {
 if (x % 3 == 0)
 {
-printf("FizzBuzz ");
+printf("FizzBuzz \n");
 }
 else
-{printf("Buzz ");
+{printf("Buzz \n");
 }
 }
 else
 {
-printf("%i ", x);
+printf("%i \n", x);
 }
 }
 return (0);
