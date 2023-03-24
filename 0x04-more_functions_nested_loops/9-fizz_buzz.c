@@ -29,19 +29,22 @@ if (x % 3 == 0)
 printf("FizzBuzz ");
 }
 else
-{printf("Buzz ");
-}
-}
-else
+{
 {
 if (x == 100)
 {
-printf("%i", x);
+printf("Buzz");
+}
+else
+{
+printf("Buzz ");
+}
+}
+}
 }
 else
 {
 printf("%i ", x);
-}
 }
 }
 return (0);
