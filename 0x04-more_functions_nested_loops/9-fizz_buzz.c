@@ -15,27 +15,33 @@ for (x = 1; x <= 100; x++)
 if (x % 3 == 0)
 {
 if (x % 5 == 0)
-{
-printf("FizzBuzz \n");
+{printf("FizzBuzz ");
 }
 else
 {
-printf("Fizz \n");
+printf("Fizz ");
 }
 }
 else if (x % 5 == 0)
 {
 if (x % 3 == 0)
 {
-printf("FizzBuzz \n");
+printf("FizzBuzz ");
 }
 else
-{printf("Buzz \n");
+{printf("Buzz ");
 }
 }
 else
 {
-printf("%i \n", x);
+if (x == 100)
+{
+printf("%i", x);
+}
+else
+{
+printf("%i ", x);
+}
 }
 }
 return (0);
