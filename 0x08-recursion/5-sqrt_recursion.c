@@ -1,8 +1,8 @@
+#include "main.h"
 #include <stdio.h>
-int
-sqrt(int n, int i);
+int _sqrt(int n, int i);
 /**
-* sart recursion - Returns the natural square root of a number
+* _sqrt_recursion - Returns the natural square root of a number
 * @n: number to calculate the natural square root
 *
 * Return: the natural square root
@@ -20,11 +20,11 @@ return (_sqrt(n, 1));
 */
 int _sqrt(int n, int i)
 {
-int sart = i * i;
-if (sart > n)
+int sqrt = i * i;
+if (sqrt > n)
 return (-1);
-if (sart == n)
+if (sqrt == n)
 return (i);
-i
+
 return (_sqrt(n, i + 1));
 }
