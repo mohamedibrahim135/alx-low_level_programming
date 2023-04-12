@@ -28,7 +28,7 @@ for (j = i; j >= 0; j--)
 {
 free(a[j]);
 }
-free(a[j]);
+free(a);
 return (NULL);
 }
 }
