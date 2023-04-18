@@ -26,10 +26,10 @@ if (max_dog->name == NULL)
 free(max_dog);
 return (NULL);
 }
-max_dog->name = malloc(sizeof (char) * name_l);
+max_dog->name = malloc(sizeof(char) * name_l);
 if (max_dog->name == NULL)
 {
-free (max_dog);
+free(max_dog);
 return (NULL);
 }
 max_dog->owner = malloc(sizeof(char) * own_l);
