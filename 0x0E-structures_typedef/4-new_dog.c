@@ -26,12 +26,6 @@ if (max_dog->name == NULL)
 free(max_dog);
 return (NULL);
 }
-max_dog->name = malloc(sizeof(char) * name_l);
-if (max_dog->name == NULL)
-{
-free(max_dog);
-return (NULL);
-}
 max_dog->owner = malloc(sizeof(char) * own_l);
 if (max_dog->owner == NULL)
 {
@@ -60,7 +54,7 @@ c++;
 return (c);
 }
 /**
-* _strepy - Copy a string
+* _strcpy - Copy a string
 * @dest: Destination value
 * @src: Source value
 * Return: the pointer to dest
