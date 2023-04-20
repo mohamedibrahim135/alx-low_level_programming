@@ -13,19 +13,10 @@ return (elem == 98);
 /**
 * is_strictly_positive - check if a number is greater than 0
 * @elem: the integer to check
-* Return: 0 if false, something else otherwise.
-*/
-int is_strictly_positive(int elem)
-{
-return (elem == 98);
-}
-/**
-* is_strictly_positive - check if a number is greater than 0
-* @elem: the integer to check
 *
 * Return: 0 if false, something else otherwise.
 */
-int is_strictly_positivelint(int  elem)
+int is_strictly_positive(int  elem)
 {
 return (elem > 0);
 }
