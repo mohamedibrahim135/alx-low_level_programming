@@ -1,4 +1,4 @@
-section         .texteax,0
+section         .text
         extern	printf
 	global	main
 main:			edi, msg
