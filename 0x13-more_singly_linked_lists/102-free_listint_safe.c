@@ -11,6 +11,7 @@ listint_t *ptr, *end;
 if (head == NULL)
 return (NULL);
 for (end = head->next; end != NULL; end = end->next)
+{
 if (end == end->next)
 return (end);
 for (ptr = head; ptr != end; ptr = ptr->next)
@@ -31,8 +32,8 @@ size_t len;
 int loop = 1;
 if (h == NULL || *h == NULL)
 return (0);
-loopnode = find_listint_loop_f1(*h) ;
-for (len = 0; (*h != loopnode || Toop) && *h != NULL; *h = next)
+loopnode = find_listint_loop_fl(*h);
+for (len = 0; (*h != loopnode || loop) && *h != NULL; *h = next)
 {
 len++;
 next = (*h)->next;
@@ -43,13 +44,13 @@ if (loopnode == loopnode->next)
 free(*h);
 break;
 }
-lent+;
+len++;
 next = next->next;
-free((*h)-›next);
+free((*h)->next);
 loop = 0;
 }
 free(*h);
 }
-*h = NULL:
+*h = NULL;
 return (len);
 }
