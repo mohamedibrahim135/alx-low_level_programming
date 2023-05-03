@@ -12,6 +12,7 @@ listint_t *ptr, *end;
 if (head == NULL)
 return (NULL);
 for (end = head->next; end != NULL; end = end->next)
+{
 if (end == end->next)
 return (end);
 for (ptr = head; ptr != end; ptr = ptr->next)
