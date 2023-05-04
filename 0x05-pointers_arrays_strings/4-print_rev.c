@@ -21,4 +21,6 @@ for (; p >= i; p--)
 {
 _putchar(*p);
 }
+
+_putchar('\n');
 }
