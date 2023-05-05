@@ -33,11 +33,11 @@ str++;
 
 else
 {
-for (d = 0; d < i + 1 / 2; d++)
+for (d = 0; d < (i + 1) / 2; d++)
 {
 str++;
 }
-for (l = i + 1 / 2; l < i; l++)
+for (l = (i + 1) / 2; l < i; l++)
 {
 _putchar(*str);
 str++;
