@@ -1,5 +1,5 @@
+#include "main.h"
 #include <stdio.h>
-#include "_putchar.c"
 /**
 *_strcat -Concatenates two strings
 *@dest: The destination string
@@ -8,24 +8,16 @@
 */
 char *_strcat(char *dest, char *src)
 {
-int i = 0, j = 0, t = 0;
-
-while (dest[i] != '\0')
+int dlen = 0, i;
+while (dest[dlen])
 {
-i++;
+dlen++;
 }
-
-while (src[j] != '\0')
+for (i = 0; src[i] != 0; i++)
 {
-j++;
+dest[dlen] = src[i];
+dlen++;
 }
-
-while (t != j)
-{
-dest[i] = src[t];
-i++;
-t++;
-}
-dest[i] = '\0';
+dest[dlen] = '\0';
 return (dest);
 }
