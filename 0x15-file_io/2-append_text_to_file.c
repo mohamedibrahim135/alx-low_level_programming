@@ -14,7 +14,7 @@ i++;
 return (i);
 }
 /**
-* create_file - creates a file
+* append_text_to_file - creates a file
 * @filename: name of file to create
 * @text_content: text to write
 * Return: 1 on success 0 on failure
