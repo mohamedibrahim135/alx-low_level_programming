@@ -23,9 +23,9 @@ int append_text_to_file(const char *filename, char *text_content)
 {
 int fd;
 ssize_t bytes = 0, len = _strlen(text_content);
-if (filename)
+if (!filename)
 return (-1);
-fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+fd = open(filename, O_WRONLY | O_APPEND);
 if (fd == -1)
 return (-1);
 if (len)
